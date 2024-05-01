@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
@@ -9,24 +8,24 @@ const Nav = () => {
           <h3 className=" text-lg pr-5 font-semibold text-white ">{`<Codemy/>`}</h3>
         </NavLink>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-white border-b-2" : "text-white"
+          className={(props) =>
+            props.isActive ? "text-white border-b-2" : "text-white"
           }
           to={"/home"}
         >
           Home
         </NavLink>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-white border-b-2" : "text-white"
+          className={(props) =>
+            props.isActive ? "text-white border-b-2" : "text-white"
           }
           to={"/about"}
         >
           About
         </NavLink>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-white border-b-2" : "text-white"
+          className={(props) =>
+            props.isActive ? "text-white border-b-2" : "text-white"
           }
           to={"/courses"}
         >

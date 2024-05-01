@@ -1,7 +1,5 @@
-import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
-import { Nav } from '../../components';
-import One from './One';
+
 
 const ExpertMenu = () => {
     const languages = ['JavaScript Course', 'Python Course', 'Java Course', 'C# Course', 'C++ Course', 'Ruby Course', 'Swift Course'];

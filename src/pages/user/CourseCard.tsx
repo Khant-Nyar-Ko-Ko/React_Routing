@@ -1,6 +1,10 @@
-import React from 'react';
+interface CourseCardProps {
+  image: string;
+  title: string;
+  description: string;
+}
 
-const CourseCard = ({ image, title, description }) => {
+const CourseCard = ({ image, title, description }: CourseCardProps) => {
   return (
     <div className="w-[250px] h-[250px] bg-slate-300 shadow p-4 flex flex-col justify-between">
       <div>
